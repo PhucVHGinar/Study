@@ -12,8 +12,8 @@ function freezeObj(){
 
     try {                       // it's going to try what's in the first part of the block.
         MATH_CONSTANTS.PI = 99; // => In this line, we're going to try to change MATH_CONSTANTS.PI to 99.
-    } catch(ex) {             // And if there's an error, then it's going to go into the catch part and it's going to log it out.
-        console.log(ex);
+    } catch(error) {             // And if there's an error, then it's going to go into the catch part and it's going to log it out.
+        console.log(error);
     }
     return MATH_CONSTANTS.PI;   // We're going to return the MATH_CONSTANTS.PI.
 }
