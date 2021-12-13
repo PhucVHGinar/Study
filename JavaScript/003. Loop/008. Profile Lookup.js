@@ -29,13 +29,12 @@ function lookupProfile(name, prop) {
     for(i = 0; i < contacts.length; i++) {
         if(contacts[i].firstName === name || contacts[i].lastName === name) {
             return contacts[i][prop] || "No such property";
-            }
+            } 
         }
-        
         return "No such contact";
     }
     
 
 // Change these values to test
-var data = lookupProfile("Vos", "firstName");
+var data = lookupProfile("fafa", "lastName");
 console.log(data);
